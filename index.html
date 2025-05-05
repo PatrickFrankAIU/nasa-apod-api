@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD - Async/Await Practice</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NASA Astronomy Picture of the Day</h1>
+        
+        <div class="date-selector">
+            <label for="date-picker">Select a date:</label>
+            <input type="date" id="date-picker">
+            <button id="fetch-button">Fetch Image</button>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <p>Loading data from NASA...</p>
+        </div>
+        
+        <div id="error-message" class="hidden">
+            <p>Error fetching data. Please try again.</p>
+        </div>
+        
+        <div id="result" class="hidden">
+            <h2 id="title"></h2>
+            <div class="image-container">
+                <img id="apod-image" src="" alt="NASA Astronomy Picture of the Day">
+            </div>
+            <p id="date"></p>
+            <p id="explanation"></p>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
